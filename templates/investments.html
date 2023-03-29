@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+  <table style="width:100%">
+    <tr>
+      <th>Investment</th>
+      <th>Count</th>
+      <th>Investment Type</th>
+      <tr>
+ {% for x in result %}
+  <tr>
+    <th>{{x.Name}}</th>
+    <th>{{x.Count}}</th>
+    <th>{{x.type}}</th>
+  </tr>
+  {% endfor %}
+</table>
+</body>
+</html>
+
+
+

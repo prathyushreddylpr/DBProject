@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Bootstrap Template</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+      <div class = "container">
+        <form action="{{ url_for('insert_investments')}}" method="POST">
+                <nav class="navbar navbar-inverse navbar-fixed-top " style="background-color: black; text-align: center;">
+            <div class="container-fluid">
+              <div class="navbar-header" style="margin: 0 auto;">
+                <a class="navbar-brand" href="update" style="color: white;">Update</a>
+                <a class="navbar-brand" href="delete" style="color: white;">Delete</a>
+                <a class="navbar-brand" href="insert" style="color: white;">Insert</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+              </ul>
+            </div>
+          </nav>
+            <div class="d-flex flex-row align-items-center mb-4">
+                <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+            <div class="form-outline flex-fill mb-0">
+        
+            <div style="text-align:center ;" class="form-group">
+              <h3>Insert</h3>
+              <input type="text" class="form-control" name = "investmendid" id = "investmendid" placeholder= "Investment ID"> 
+			  <input type="text" class="form-control" name = "investmenttype" id = "investmenttype" placeholder= "Investment type"> 
+			  <input type="text" class="form-control" name = "investmentdate" id = "investmentdate" placeholder= "Investment date (dd-mm-yyyy) format"> 
+			  <input type="text" class="form-control" name = "investmentname" id = "investmentname" placeholder= "Investment name"> 
+			  <input type="text" class="form-control" name = "unitvalue" id = "unitvalue" placeholder= "Unit Value"> 
+            </div>
+			
+			
+			
+			
+            <div class="form-group form-check">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </div>
+            </div>
+			</div>
+			</div>
+          </form>
+      </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
